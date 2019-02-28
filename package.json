@@ -1,0 +1,27 @@
+{
+  "name": "@doubledutch/react-timer",
+  "version": "0.0.1",
+  "description": "h:mm:ss timer that counts up from or down to a target time",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doubledutch/react-timer.git"
+  },
+  "keywords": [
+    "react",
+    "timer",
+    "component"
+  ],
+  "author": "Adam Liechty",
+  "license": "apache-2.0",
+  "bugs": {
+    "url": "https://github.com/doubledutch/react-timer/issues"
+  },
+  "homepage": "https://github.com/doubledutch/react-timer#readme",
+  "devDependencies": {
+    "react": "^16.8.3"
+  }
+}
