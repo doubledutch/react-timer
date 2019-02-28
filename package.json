@@ -1,10 +1,11 @@
 {
   "name": "@doubledutch/react-timer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "h:mm:ss timer that counts up from or down to a target time",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prepare": "npm test"
   },
   "repository": {
     "type": "git",
