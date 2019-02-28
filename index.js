@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import React, {PureComponent} from 'react'
+import {createElement, PureComponent} from 'react'
 
 function formatDifference (milliseconds) {
   const abs = Math.abs(milliseconds)
@@ -50,10 +50,10 @@ export default class Timer extends PureComponent {
   }
 
   render() {
-    const { targetTime, Wrapper } = this.props
+    const { targetTime, Wrapper, wrapperProps } = this.props
     const { time } = this.state
     const difference = time.valueOf() - (targetTime || new Date()).valueOf()
     const s = formatDifference(difference)
-    return Wrapper ? <Wrapper>{s}</Wrapper> : s
+    return Wrapper ? createElement(Wrapper, wrapperProps, s) : s
   }
 }

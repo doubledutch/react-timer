@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SharedTimer defaults getTime to () => new Date() 1`] = `"0:00"`;
+
+exports[`SharedTimer defaults targetTime to new Date() 1`] = `"0:00"`;
+
+exports[`SharedTimer renders 0:ss 1`] = `"0:12"`;
+
+exports[`SharedTimer renders m:ss 1`] = `"3:45"`;
+
+exports[`SharedTimer with past targetTime renders time since 1`] = `"24:00:00"`;
+
+exports[`SharedTimer without Wrapper renders bare text 1`] = `"1:02:03"`;
+
+exports[`Timer with component Wrapper renders text in component 1`] = `
+<div
+  className="my-class"
+>
+  T minus 
+  1:02:03
+</div>
+`;
+
+exports[`Timer with span Wrapper renders text in span 1`] = `
+<span
+  className="my-class"
+>
+  1:02:03
+</span>
+`;
