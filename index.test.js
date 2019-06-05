@@ -17,6 +17,12 @@ test('SharedTimer with past targetTime renders time since', () => {
   expect(tree).toMatchSnapshot()
 })
 
+test('SharedTimer with past targetTime renders time since 5 min ago', () => {
+  const component = renderer.create(<SharedTimer getTime={getTime} targetTime={new Date('1983-04-25T23:55:00')} />)
+  const tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+})
+
 test('SharedTimer renders m:ss', () => {
   const component = renderer.create(<SharedTimer getTime={getTime} targetTime={new Date('1983-04-26T00:03:45')} />)
   const tree = component.toJSON()
